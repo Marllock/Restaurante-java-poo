@@ -16,7 +16,10 @@ public class Massa extends Prato{
             this.codigo = codigo;
             this.ingrediente = ingrediente;
      }
-     
+ 
+     public Massa(){
+         
+     }
      //getters
      public String getTipo() {
          return tipo;

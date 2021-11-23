@@ -11,6 +11,10 @@ public class Prato {
         this.preco = preco;
     }
 
+    public Prato(){
+        
+    }
+
     // Método getters
 
     public double getPreco() {

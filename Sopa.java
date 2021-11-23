@@ -8,6 +8,10 @@ public class Sopa extends Prato{
     private int codigo;
 
     //metodos construtores
+public Sopa(){
+    super();
+}
+
     public Sopa(String tipo, String descricao, String classificacao,int codigo,String nome,double preco) {
         super(nome, preco);
         this.tipo = tipo;
@@ -15,6 +19,8 @@ public class Sopa extends Prato{
         this.classificacao = classificacao;
         this.codigo = codigo;
     }
+
+   
  
     //getters
     public String getTipo() {
