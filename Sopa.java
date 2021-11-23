@@ -49,5 +49,8 @@ public Sopa(){
     public void setCodigo(int codigo){
         this.codigo = codigo;
     }
-
+    @Override
+    public String toString() {
+        return "Sopa:" + "tipo=" + tipo + ", \ndescricao=" + descricao + ", \nclassificacao=" + classificacao + ", \ncodigo=" + codigo + "\nnome " + getNome() + "\npreco" + getPreco();
+    }
 }

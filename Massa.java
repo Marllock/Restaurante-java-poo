@@ -18,7 +18,7 @@ public class Massa extends Prato{
      }
  
      public Massa(){
-         
+
      }
      //getters
      public String getTipo() {
@@ -53,4 +53,8 @@ public class Massa extends Prato{
      public void setCodigo(int codigo){
          this.codigo = codigo;
      }
+     @Override
+    public String toString() {
+        return "Massa{" + "tipo=" + tipo + ", descricao=" + descricao + ", classificacao=" + classificacao + ", ingrediente=" + ingrediente + ", codigo=" + codigo + '}';
+    }
 }
