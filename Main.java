@@ -1,9 +1,9 @@
 //Nome - Marcello Vieira Benites Ra: 2209845
-public class TstPrato {
+public class Main {
     public static void main(String args[]) {//classloader
  
         
-        TipoPrato p = new TipoPrato();
+        Sopa p = new Sopa();
         Leitura l = new Leitura();
         
         p.setPreco(Double.parseDouble(l.entDados("Informe o preco:")));
