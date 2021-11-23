@@ -5,6 +5,12 @@ public class Prato {
     private double preco = 0.0;
     private String nome = "";
 
+    //metodo construtor
+    public Prato(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
     // Método getters
 
     public double getPreco() {

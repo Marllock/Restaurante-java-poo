@@ -2,10 +2,12 @@
 public class Main {
     public static void main(String args[]) {//classloader
  
-        
+        int controlador;
         Sopa p = new Sopa();
         Leitura l = new Leitura();
-        
+
+    
+
         p.setPreco(Double.parseDouble(l.entDados("Informe o preco:")));
         p.setNome(l.entDados("Informe o nome do prato:"));
 
