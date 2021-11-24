@@ -1,4 +1,4 @@
-public class Massa extends Prato{
+public class Massa extends Prato implements Soma{
 
      //variaveis globais
      private String tipo = "";
@@ -15,6 +15,13 @@ public class Massa extends Prato{
             this.classificacao = classificacao;
             this.codigo = codigo;
             this.ingrediente = ingrediente;
+     }
+
+     public double soma(double preco, double preco2){
+        double soma;
+
+        soma= ((preco + preco2)* 0.1 +(preco + preco2)) ;// gorjeta do garçom!!!
+        return soma;
      }
  
      public Massa(){
@@ -55,6 +62,6 @@ public class Massa extends Prato{
      }
      @Override
     public String toString() {
-        return "Massa{" + "tipo=" + tipo + ", descricao=" + descricao + ", classificacao=" + classificacao + ", ingrediente=" + ingrediente + ", codigo=" + codigo + '}';
+        return "Massa:"+"Nome="+getNome()+"\npreco="+ getPreco() + "\ntipo=" + tipo + " \ndescricao=" + descricao + " \nclassificacao=" + classificacao + "\n ingrediente=" + ingrediente + " \ncodigo=" + codigo ;
     }
 }

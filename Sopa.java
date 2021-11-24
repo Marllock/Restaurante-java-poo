@@ -1,11 +1,20 @@
 //Nome - Marcello Vieira Benites Ra: 2209845
-public class Sopa extends Prato{
+public class Sopa extends Prato implements Soma{
 
     //variaveis globais
     private String tipo = "";
     private String descricao = "";
     private String classificacao = "";
     private int codigo;
+
+    
+    public double soma(double preco, double preco2){
+        double soma;
+
+        soma= preco + preco2;
+        return soma;
+    }
+
 
     //metodos construtores
 public Sopa(){
@@ -51,6 +60,7 @@ public Sopa(){
     }
     @Override
     public String toString() {
-        return "Sopa:" + "tipo=" + tipo + ", \ndescricao=" + descricao + ", \nclassificacao=" + classificacao + ", \ncodigo=" + codigo + "\nnome " + getNome() + "\npreco" + getPreco();
+        return "Sopa:"+ "Nome=" + getNome() + "\npreco=" +  getPreco() + "tipo=" + tipo + " \ndescricao=" + descricao + " \nclassificacao=" + classificacao + " \ncodigo=" + codigo;
     }
+
 }
